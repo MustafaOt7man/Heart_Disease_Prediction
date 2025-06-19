@@ -9,7 +9,7 @@ import os
 app = Flask(__name__)
 
 # Load the trained ECG classification model
-model = load_model(r"D:\ai\Deployed_Heart_Disease_withflask\ecg_heartbeat_model.keras")
+model = load_model("ecg_heartbeat_model.keras")
 
 # Map class labels to human-readable names
 class_map = {
